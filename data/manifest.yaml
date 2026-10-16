@@ -1,0 +1,8 @@
+version: 1
+
+entries:
+  - path: README.md
+    title: /data directory guide
+    truth_level: source
+    description: Purpose of /data and the trust model for its contents.
+    last_updated: 2026-10-16
