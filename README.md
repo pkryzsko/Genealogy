@@ -1,4 +1,4 @@
-# Geneology
+# Genealogy
 
 Indexed family-history data for the Kryzsko family lines, imported from
 [Geni](https://www.geni.com) and organized so people (and Devin) can rely on it.
