@@ -6,6 +6,7 @@ No spouses (unless they are ancestors) and no descendants of siblings.
 
 Usage:
   geni_import.py auth --code CODE        # exchange one-time OAuth code, store token
+  (or set GENI_ACCESS_TOKEN from the client-side flow: authorize?client_id=...&response_type=token)
   geni_import.py path                    # show me -> mother -> grandmother for checking
   geni_import.py run --line norway --public-dir DIR --private-dir DIR [--anchor profile-123]
 """
@@ -67,6 +68,8 @@ def exchange_code(code):
 
 
 def access_token():
+    if os.environ.get("GENI_ACCESS_TOKEN"):
+        return os.environ["GENI_ACCESS_TOKEN"]
     if os.environ.get("GENI_REFRESH_TOKEN") and not TOKEN_FILE.exists():
         cid, secret = client_creds()
         token_request({"client_id": cid, "client_secret": secret,
@@ -276,6 +279,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     a = sub.add_parser("auth"); a.add_argument("--code", default=os.environ.get("GENI_AUTH_CODE"))
     sub.add_parser("path")
+    sub.add_parser("whoami")
     r = sub.add_parser("run")
     r.add_argument("--line", required=True)
     r.add_argument("--public-dir", required=True)
@@ -286,6 +290,9 @@ def main():
         if not args.code:
             sys.exit("Pass --code or set GENI_AUTH_CODE")
         exchange_code(args.code)
+    elif args.cmd == "whoami":
+        me = Geni().get("profile", fields="id,display_name,name")
+        print("Signed in as:", me.get("display_name") or me.get("name"), me.get("id"))
     elif args.cmd == "path":
         g = Geni()
         for role, pid in zip(["You", "Mother", "Grandmother"], default_path(g)):
