@@ -78,3 +78,14 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
   Drayton, ND" media item.
 - Find a Grave: Helen https://www.findagrave.com/memorial/27450512/helen-edith-schumacher ;
   Frederick https://www.findagrave.com/memorial/69787306/frederick-carl-schumacher
+
+## Lois Bostrom & Ron Jeffrey wedding (film, 1956)
+
+- "Lois & Ron Jeffrey Wedding, June 6th, 1956" (3:38): https://youtu.be/e8Zc67qCB64. Filmed at
+  St. Mary's Catholic Church, Grand Forks, ND, by Fran Kryzsko, the bride's brother-in-law.
+- Fran (Francis Duane Kryzsko, 1935–2017), Patrick's father, was then married to **Beverly
+  Laverne Bostrom** (21 Jul 1935 – 23 Feb 1962). They married on 30 Apr 1955. The bride, **Lois
+  Catherine Bostrom** (1936–2004), was Beverly's sister. Both were daughters of Clarence Vernon
+  Bostrom (1907–1983) and Catherine Laura Bliven. Lois married **Ronald James Jeffrey**
+  (1935–2018).
+- The Bostroms are kin through Fran's first marriage. They are not Patrick's blood relatives.
