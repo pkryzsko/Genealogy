@@ -17,6 +17,9 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
 - **Frank Kryzsko** married **Katherine Marciniak** on 16 Feb 1903. They had six children,
   lived near Greenbush (Roseau County), then East Grand Forks, and from November 1918 farmed
   south of Drayton, ND.
+  Frank died at Drayton on 20 Jun 1966. Francis Duane Kryzsko (Patrick's father) was born on
+  5 Jan 1935 at his grandparents' farm south of Drayton (GEDCOM obituary note). Patrick confirms
+  the family memory of the Drayton farm area and the teacher story.
 - **Clara Maria Kryzsko** (17 Jan 1905 – 30 Oct 2002), baptised at St. Aloysius, Leo, MN.
   She married (1) W. Schieller on 14 Nov 1922 (he died 1932) and (2) **Ludwik Marion Kulas**,
   a widower, on 3 Jul 1937 at St. Stanislaus, Warsaw, ND. She is buried at Sacred Heart, Minto, ND.
