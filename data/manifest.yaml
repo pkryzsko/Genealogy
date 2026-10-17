@@ -6,3 +6,23 @@ entries:
     truth_level: source
     description: Purpose of /data and the trust model for its contents.
     last_updated: 2026-10-16
+  - path: docs/poland/kulas-family-notes.md
+    title: Kulas family notes (Harry Kulas, 1900-1963)
+    truth_level: unverified
+    description: Summary of Harry Kulas and his parents/siblings from family-written histories, with sources and open questions.
+    last_updated: 2026-10-17
+  - path: docs/norway/peter-sorlien-notes.md
+    title: Peter Sorlien notes
+    truth_level: unverified
+    description: What the Geni photo pages say about Peter Sorlien; probable great-grandfather, unconfirmed.
+    last_updated: 2026-10-17
+  - path: visual/norway/peter-sorlien-portrait.png
+    title: Peter Sorlien portrait
+    truth_level: unverified
+    description: Portrait from Geni (uploaded by Patrick Francis Kryzsko).
+    last_updated: 2026-10-17
+  - path: visual/norway/landings-lag-stevne-hillsboro-1952.png
+    title: Landings Lag Stevne, Hillsboro ND, June 20-21 1952
+    truth_level: unverified
+    description: Group photo (Geni #77) with Peter Sorlien tagged; numbered people not legible at this size.
+    last_updated: 2026-10-17
