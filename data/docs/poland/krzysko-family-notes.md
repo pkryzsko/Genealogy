@@ -66,3 +66,15 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
 2. Geni profile note for Sylvester Joseph Krzysko (in the Geni GEDCOM export of 26 Jul 2026),
    citing Find a Grave 143565219 and winonastatenews.com/5473.
 3. Wikipedia, "Winona State University" (Kryzsko Commons section).
+
+## Schumacher Farm, Drayton (film, 1962)
+
+- "Schumacher Farm, August 17th, 1962" (3:32, silent Super 8 film by Patrick's father): https://youtu.be/7bIVzFogpfY
+- The GEDCOM ties this to the Kryzsko side, not the Murphy side. **Helen Edith Kryzsko**
+  (13 Apr 1911 – 12 Jan 2004) was a daughter of Frank Sylvester Kryzsko and Katherine E.
+  Marciniak, which makes her Patrick's great-aunt, a sister of his Kryzsko grandparent. She
+  married **Frederick Carl Schumacher** (29 Jun 1906 – 28 Oct 1991), son of Frederick J.
+  Schumacher and Louisa Barbara Loeslie. Both of their Geni profiles carry a "Schumacher Farm,
+  Drayton, ND" media item.
+- Find a Grave: Helen https://www.findagrave.com/memorial/27450512/helen-edith-schumacher ;
+  Frederick https://www.findagrave.com/memorial/69787306/frederick-carl-schumacher
