@@ -67,6 +67,16 @@ Notes:
   **Manvel** (founded 1881) (Wikipedia, "Ferry Township, North Dakota"). Whether the township was
   named after this Ferry family is unconfirmed.
 
+## Home movie: James Patrick Murphy Jr.'s 80th birthday (1963)
+
+- "80th Birthday Celebration" (1:52), Patrick Kryzsko's YouTube channel: https://youtu.be/jDMOEUal3qs
+- James Patrick Murphy Jr. (29 Jul 1883 – 21 Jul 1969), Patrick's great-grandfather, and his wife
+  Hannah Johanna Bennett (1886–1963), at **Sherlock Park, East Grand Forks, MN**, on 29 Jul 1963,
+  his 80th birthday.
+- Per Patrick, Sherlock Park is connected to the family through the Sherlocks (Elizabeth Anne
+  Sherlock's family). Which Sherlock it is named for is not yet confirmed. In the GEDCOM, Elizabeth's
+  sisters are Bridget Ellen (1858–1904, married James Caldwell) and Mary (1860–1928).
+
 ## Rev. Fr. Dominic Lavin
 
 - Not a blood relative. Patrick found him through the marriage register and created his Geni
