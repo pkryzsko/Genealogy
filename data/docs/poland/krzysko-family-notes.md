@@ -35,6 +35,19 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
 - **Kryzsko Commons**, the student union at Winona State University, is named in his honor [1][2][3].
 - Gave Jim the information on the Krzysko name change [1].
 
+## Migration
+
+- Family account (Patrick, 2026): the Krzyskos came from Poland first to **Michigan**, then to
+  **Roseau County, Minnesota**. This fits [1]: Andrew's sixth child, Andrew Joe, was born in Detroit.
+- Patrick confirms the ancestor's name as **Józef** (the Polish form of Joseph).
+
+## Marciniak–Bruski connection (from the GEDCOM)
+
+- Katherine E. Marciniak (1884–1948), Frank's wife, had a brother, John Sylvester Marciniak (1881–1963).
+- John's daughter Helen Elizabeth Marciniak (1907–2001) married Kazimierz Antoni Bruski (1905–1987).
+- So the Bruskis are Marciniak cousins. Not yet placed: Mary Ellen Bruski, the PGS-MN website
+  volunteer listed in the 2008 newsletter.
+
 ## Conflicts to resolve
 
 - Andrew's parents: the article has Joseph Krzysko and Agnes Mastek, both born about 1820. The
