@@ -22,3 +22,10 @@ Photos: [portrait](../../visual/norway/peter-sorlien-portrait.png),
 [1952 Landings Lag Stevne](../../visual/norway/landings-lag-stevne-hillsboro-1952.png).
 
 Sources: Geni GEDCOM export (26 Jul 2026); Geni photo pages for Peter Sorlien (saved as PDF in the private repository).
+
+## Petter Pedersen Leresdal (1849–1925)
+
+Peter's father, **Petter Pedersen** (b. 13 May 1849 at Lomsdalen, d. 23 May 1925 at Granly), was a
+husmann (crofter) at Leresdalen under Gjefle, Nordre Land, according to the 1875, 1900 and 1910
+censuses. Patrick's Facebook page for him shows the home site:
+https://www.facebook.com/LeresdalenSondreLand1849NordeLand1925
