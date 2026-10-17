@@ -16,6 +16,33 @@ James Patrick Murphy (1883–1969, born in North Dakota) → **James Patrick Mur
   registration date) [2].
 - Elizabeth's parents were J. Patrick Sherlock (about 1832 – before 1862) and Mary Devine (1834–1898) [3].
 
+## Register entry (transcription)
+
+St. Peter Celestine, Pakenham, parish register, entry M.1 of 1876, signed by D. J. Lavin. The image
+came from FamilySearch via Patrick. A copy is kept privately in Genealogy-Living at
+`data/visual/ireland/murphy-sherlock-marriage-1876-pakenham.png`.
+
+> St. Celestine, Pakenham, the second day of May, one thousand eight hundred and seventy-six.
+> Whereas a dispensation of two of the banns of marriage has been granted by the undersigned, in
+> virtue of a power accorded by His Lordship, Dr. Duhamel, Bishop of Ottawa; whereas also the
+> publication of the third bann has been made at the prone of the parish mass between James Murphy,
+> laborer, son of age (23 years) of Arthur Murphy & Mary Thorp [?] of this mission, on the one part;
+> and Anne Sherlock, daughter of age (20 years) of Patrick Sherlock (deceased) and Mary Devine of
+> this mission, on the other part. No impediment having been discovered, I the undersigned priest
+> of this mission, having received their mutual consent to marriage, have given them the nuptial
+> benediction on the day and date above mentioned, in presence of Charles McGuire & Bridget Sherlock,
+> who have not signed. — D. J. Lavin, Priest
+
+Margin: "Murphy James and Sherlock Mary [?]", marked "Registered".
+
+Notes:
+- James's mother is given as **Mary Thorp** (the surname is hard to read: Thorp, Tharp or Thorpe?).
+  She is not in the GEDCOM.
+- The bride is called **Anne**, matching Elizabeth Anne Sherlock. The margin seems to say "Mary".
+- The witness **Bridget Sherlock** is probably the bride's sister, Bridget Ellen Sherlock (born 1858).
+- Ages: James 23 and Anne 20. That fits Anne's birth in 1856, but for James (born 15 Apr 1854,
+  so 22 in May 1876) it is about a year off.
+
 ## Rev. Fr. Dominic Lavin
 
 - Not a blood relative. Patrick found him through the marriage register and created his Geni
