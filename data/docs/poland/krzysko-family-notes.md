@@ -89,3 +89,15 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
   Bostrom (1907–1983) and Catherine Laura Bliven. Lois married **Ronald James Jeffrey**
   (1935–2018).
 - The Bostroms are kin through Fran's first marriage. They are not Patrick's blood relatives.
+
+## "(preview) Riverside Kryzsko's" (home movie)
+
+- https://youtu.be/nGh8OedI970 (2:29, uploaded 28 Jul 2018). YouTube description: "Al & Margaret
+  Kryzsko family gathering at their home located on Riverside Drive, a.k.a. Viets Ave., Riverside
+  Park area, Grand Forks, ND." The film is undated.
+- **Alfred James Krzysko** (6 Jul 1907 – 20 Sep 1995), son of Frank Sylvester Kryzsko and
+  Katherine E. Marciniak, and **Margaret Evelyn Murphy** (12 Aug 1915 – 15 Nov 1986), daughter
+  of James Patrick Murphy Jr. and Hannah Johanna Bennett. They were Patrick's paternal
+  grandparents, so this house is where the Kryzsko and Murphy lines meet.
+- Patrick describes it as family with the older Polish generation. If the film is from before
+  1966, Frank Sylvester Kryzsko (1882–1966) may be among them. Katherine died in 1948.
