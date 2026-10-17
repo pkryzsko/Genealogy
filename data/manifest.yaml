@@ -61,3 +61,8 @@ entries:
     truth_level: unverified
     description: Irish line. James Patrick Murphy married Elizabeth Anne Sherlock in 1876 at St. Peter Celestine (Lanark County, Ontario), married by Rev. Fr. D. J. Lavin, whose family was from Sligo.
     last_updated: 2026-10-17
+  - path: docs/reacquaintenment-seed.md
+    title: Reacquaintenment seed (start here; index and intro for Ask Devin)
+    truth_level: source
+    description: Primer for restoring context in a new session; rules, repo map, state of each family line, films, open questions.
+    last_updated: 2026-10-17
