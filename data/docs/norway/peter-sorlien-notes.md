@@ -33,3 +33,6 @@ https://www.facebook.com/LeresdalenSondreLand1849NordeLand1925
 Family tradition holds that Leresdal/Leresdalen was named after an original owner called Lars
 (unverified). *Dal* = valley, *-en* = "the". Census spellings vary: Linedsdalen (1875),
 Leresdalen (1900), Lenæsdalen (1910).
+
+The name is still in use: a modern road sign reading **Lerretsdalsvegen** stands on the road up from
+the Gjevle property. Patrick's photo is kept in the private repository.
