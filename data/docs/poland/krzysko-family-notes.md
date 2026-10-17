@@ -111,3 +111,9 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
   Indianapolis he stopped back at the fort. He was probably still learning his new camera,
   which makes this among the earliest of his Super 8 films (Patrick's account and the YouTube
   description).
+
+## "Riverside Pool, Grand Forks, ND - 1961" (film)
+
+- https://youtu.be/nv9Mdkrm7jE. Shot by Fran Kryzsko in Riverside Park, near Al & Margaret
+  Kryzsko's Riverside Drive home. Patrick describes it as family at the pool with the Kryzsko aunts.
+  YouTube asked for sign-in when fetching details, so only the title is recorded.
