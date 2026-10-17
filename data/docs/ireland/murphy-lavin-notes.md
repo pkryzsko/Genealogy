@@ -76,7 +76,7 @@ Silent Super 8 films shot by their grandson Francis Duane Kryzsko (Patrick's fat
 - "50th Anniversary, James & Hannah Murphy, 1956" (3:56), North Dakota: https://youtu.be/Gs-COc4Olrc
 - The YouTube description links their Geni profiles: James Jr. (6000000045725822142) and Hannah
   (6000000045725470668).
-- A 50th anniversary in 1956 implies they married in about 1906.
+- They married in 1906 (GEDCOM), which fits a 50th anniversary in 1956.
 
 ### 80th birthday (1963)
 
