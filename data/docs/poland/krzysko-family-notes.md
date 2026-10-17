@@ -101,3 +101,13 @@ Frank Sylvester Kryzsko (1882–1966) → Andrew (Joseph Andrew) Krzysko/Krzyska
   grandparents, so this house is where the Kryzsko and Murphy lines meet.
 - Patrick describes it as family with the older Polish generation. If the film is from before
   1966, Frank Sylvester Kryzsko (1882–1966) may be among them. Katherine died in 1948.
+
+## "Fran Kryzsko visiting Ft Ben Harrison, March 1956" (film)
+
+- https://youtu.be/1wmpOsrAj_w (3:31, uploaded 11 Nov 2018).
+- Francis Duane "Fran" Kryzsko (1935–2017) joined the Army after finishing high school in 1953
+  and did his advanced individual training at Fort Benjamin Harrison, Indianapolis, Indiana.
+  After the Army he drove for Kedney's Allied Van Lines, and on one road trip through
+  Indianapolis he stopped back at the fort. He was probably still learning his new camera,
+  which makes this among the earliest of his Super 8 films (Patrick's account and the YouTube
+  description).
