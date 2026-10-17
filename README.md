@@ -29,3 +29,15 @@ See [`data/README.md`](data/README.md). Imported Geni data is user-contributed, 
 
 `tools/geni_import.py` re-imports a line through Geni's official API. It needs
 `GENI_APP_SECRET` (and optionally `GENI_APP_ID`) in the environment; never commit them.
+
+It can also read a GEDCOM export (from Geni, MyHeritage or genealogy software)
+instead of calling the API, applying the same scope and living/deceased split:
+
+```
+python3 tools/geni_import.py find --gedcom tree.ged Schultz        # look up record ids
+python3 tools/geni_import.py path --gedcom tree.ged --me @I1@      # check me -> mother -> grandmother
+python3 tools/geni_import.py run --gedcom tree.ged --me @I1@ --line norway \
+    --public-dir data/docs --private-dir ../Genealogy-Living/data/docs
+```
+
+Keep the `.ged` file itself out of this public repo: it contains living relatives.

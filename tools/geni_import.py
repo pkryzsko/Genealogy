@@ -9,6 +9,12 @@ Usage:
   (or set GENI_ACCESS_TOKEN from the client-side flow: authorize?client_id=...&response_type=token)
   geni_import.py path                    # show me -> mother -> grandmother for checking
   geni_import.py run --line norway --public-dir DIR --private-dir DIR [--anchor profile-123]
+
+GEDCOM instead of the API (e.g. a Geni or MyHeritage export):
+  geni_import.py find --gedcom tree.ged Schultz          # list matching people and their IDs
+  geni_import.py path --gedcom tree.ged --me @I1@        # show me -> mother -> grandmother
+  geni_import.py run --gedcom tree.ged --line norway --public-dir DIR --private-dir DIR \
+      (--anchor @I123@ | --me @I1@)
 """
 import argparse
 import datetime as dt
@@ -112,6 +118,11 @@ class Geni:
                 raise SystemExit(f"GET {path} failed: HTTP {e.code} {e.read()[:200]!r}")
         raise SystemExit(f"GET {path} kept failing (rate limit)")
 
+    source = "geni.com API"
+
+    def me(self):
+        return self.get("profile", fields=FIELDS)
+
     def profile(self, pid):
         if pid not in self.cache:
             self.cache[pid] = self.get(pid, fields=FIELDS)
@@ -148,6 +159,151 @@ class Geni:
         return parents, siblings
 
 
+EVENTS = {"BIRT": "birth", "CHR": "baptism", "BAPM": "baptism", "DEAT": "death", "BURI": "burial"}
+MONTHS = {m: i for i, m in enumerate(
+    "JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split(), 1)}
+
+
+def gedcom_date(raw):
+    date = {"raw": raw}
+    words = raw.upper().split()
+    years = [w for w in words if re.fullmatch(r"\d{3,4}(/\d{1,2})?", w)]
+    if years:
+        date["year"] = int(years[0].split("/")[0])
+        i = words.index(years[0])
+        if i >= 1 and words[i - 1] in MONTHS:
+            date["month"] = MONTHS[words[i - 1]]
+            if i >= 2 and words[i - 2].isdigit():
+                date["day"] = int(words[i - 2])
+    return date
+
+
+def gid(xref):
+    return "gedcom-" + xref.strip("@")
+
+
+class Gedcom:
+    """Reads a GEDCOM file and offers the same profile()/family() interface as Geni."""
+
+    def __init__(self, path):
+        self.source = f"GEDCOM file {Path(path).name}"
+        self.cache, self.fams = {}, {}
+        records, cur = [], None
+        for raw in Path(path).read_text(encoding="utf-8-sig", errors="replace").splitlines():
+            m = re.match(r"\s*(\d+)\s+(@[^@]+@\s+)?(\S+)\s?(.*)$", raw)
+            if not m:
+                continue
+            level, xref, tag, val = int(m[1]), (m[2] or "").strip(), m[3], m[4]
+            if tag in ("CONC", "CONT") and cur and cur["stack"]:
+                node = cur["stack"][-1]
+                node["val"] += ("\n" if tag == "CONT" else "") + val
+                continue
+            node = {"tag": tag, "val": val, "kids": []}
+            if level == 0:
+                cur = dict(node, xref=xref)
+                cur["stack"] = [cur]
+                records.append(cur)
+                continue
+            if not cur:
+                continue
+            stack = cur["stack"]
+            del stack[level:]
+            stack[level - 1]["kids"].append(node)
+            stack.append(node)
+        for r in records:
+            if r["tag"] == "INDI":
+                self.cache[gid(r["xref"])] = self._person(r)
+            elif r["tag"] == "FAM":
+                f = {"parents": [], "children": []}
+                for k in r["kids"]:
+                    if k["tag"] in ("HUSB", "WIFE"):
+                        f["parents"].append(gid(k["val"]))
+                    elif k["tag"] == "CHIL":
+                        f["children"].append(gid(k["val"]))
+                self.fams[r["xref"]] = f
+
+    @staticmethod
+    def _person(r):
+        p = {"id": gid(r["xref"]), "gedcom_xref": r["xref"], "famc": [], "fams": []}
+        for k in r["kids"]:
+            sub = {c["tag"]: c["val"] for c in k["kids"]}
+            if k["tag"] == "NAME" and "first_name" not in p:
+                given = sub.get("GIVN") or k["val"].split("/")[0].strip()
+                surname = sub.get("SURN") or (k["val"].split("/") + ["", ""])[1].strip()
+                p.update(first_name=given, last_name=surname,
+                         name=" ".join(x for x in [given, surname] if x))
+                if sub.get("_MARNM"):
+                    p["married_name"] = sub["_MARNM"]
+            elif k["tag"] == "SEX":
+                p["gender"] = {"M": "male", "F": "female"}.get(k["val"].strip().upper(), "unknown")
+            elif k["tag"] in EVENTS and EVENTS[k["tag"]] not in p:
+                ev = {}
+                if sub.get("DATE"):
+                    ev["date"] = gedcom_date(sub["DATE"])
+                if sub.get("PLAC"):
+                    ev["location"] = {"place_name": sub["PLAC"]}
+                p[EVENTS[k["tag"]]] = ev or {"recorded": True}
+            elif k["tag"] == "OCCU":
+                p["occupation"] = k["val"]
+            elif k["tag"] in ("_UID", "UID"):
+                p["guid"] = k["val"]
+            elif k["tag"] in ("WWW", "_URL", "URL") and "profile_url" not in p:
+                p["profile_url"] = k["val"]
+            elif k["tag"] == "FAMC":
+                pedi = (sub.get("PEDI") or "birth").lower()
+                if pedi in ("birth", "natural"):
+                    p["famc"].append(k["val"])
+            elif k["tag"] == "FAMS":
+                p["fams"].append(k["val"])
+        return p
+
+    def me(self):
+        sys.exit("With --gedcom, pass --me @I..@ (your own record; see the find command)")
+
+    def profile(self, pid):
+        if pid not in self.cache:
+            sys.exit(f"{pid} is not in the GEDCOM file")
+        return self.cache[pid]
+
+    def family(self, pid):
+        p = self.profile(pid)
+        parents, siblings, seen = [], [], {pid}
+        for f in p["famc"]:
+            fam = self.fams.get(f, {"parents": [], "children": []})
+            parents += [x for x in fam["parents"] if x not in parents]
+            for c in fam["children"]:
+                if c not in seen:
+                    seen.add(c)
+                    siblings.append((c, "sibling"))
+        for par in parents:
+            for f in self.profile(par)["fams"]:
+                if f in p["famc"]:
+                    continue
+                for c in self.fams.get(f, {"children": []})["children"]:
+                    if c not in seen:
+                        seen.add(c)
+                        siblings.append((c, "half-sibling"))
+        return parents, siblings
+
+    def find(self, text):
+        t = text.lower()
+        return [p for p in self.cache.values()
+                if t in " ".join(str(p.get(k, "")) for k in ("name", "married_name")).lower()]
+
+
+def open_source(args):
+    if getattr(args, "gedcom", None):
+        return Gedcom(args.gedcom)
+    return Geni()
+
+
+def ref(g, value):
+    """Accept '@I12@', 'I12' or 'gedcom-I12' for GEDCOM sources; pass Geni ids through."""
+    if value and isinstance(g, Gedcom) and not value.startswith("gedcom-"):
+        return gid(value)
+    return value
+
+
 def year(event):
     date = (event or {}).get("date") or {}
     return date.get("year")
@@ -177,9 +333,12 @@ def mother_of(g, pid):
     return moms[0]
 
 
-def default_path(g):
-    me = g.get("profile", fields=FIELDS)
-    g.cache[me["id"]] = me
+def default_path(g, me_id=None):
+    if me_id:
+        me = g.profile(me_id)
+    else:
+        me = g.me()
+        g.cache[me["id"]] = me
     mom = mother_of(g, me["id"])
     gma = mother_of(g, mom)
     return [me["id"], mom, gma]
@@ -216,7 +375,8 @@ def slug(s):
 
 def record(g, pid, meta):
     p = g.profile(pid)
-    keep = {k: p.get(k) for k in FIELDS.split(",") if p.get(k) not in (None, "", [], {})}
+    keys = FIELDS.split(",") + ["gedcom_xref", "married_name"]
+    keep = {k: p.get(k) for k in keys if p.get(k) not in (None, "", [], {})}
     keep.pop("unions", None)
     keep.update(meta)
     return keep
@@ -237,7 +397,7 @@ def mermaid(people, parents_of, g, include):
     return "\n".join(lines) + "\n"
 
 
-def write_tree(root, line, entries, diagram, today):
+def write_tree(root, line, entries, diagram, today, source):
     base = Path(root) / line
     (base / "profiles").mkdir(parents=True, exist_ok=True)
     index = []
@@ -249,15 +409,15 @@ def write_tree(root, line, entries, diagram, today):
                       "birth_year": year(e.get("birth")), "death_year": year(e.get("death")),
                       "file": fname, "geni_url": e.get("profile_url")})
     (base / "index.json").write_text(json.dumps(
-        {"line": line, "imported": today, "source": "geni.com API", "count": len(index),
+        {"line": line, "imported": today, "source": source, "count": len(index),
          "profiles": index}, indent=2, ensure_ascii=False) + "\n")
     (base / "tree.mmd").write_text(diagram)
     return len(index)
 
 
 def run(args):
-    g = Geni()
-    anchor = args.anchor or default_path(g)[-1]
+    g = open_source(args)
+    anchor = ref(g, args.anchor) or default_path(g, ref(g, args.me))[-1]
     print("Anchor:", describe(g.profile(anchor)))
     people, parents_of = collect(g, anchor)
     today = dt.date.today().isoformat()
@@ -268,9 +428,9 @@ def run(args):
         (private if rec["living"] else public).append(rec)
     pub_ids = {r["id"] for r in public}
     n_pub = write_tree(args.public_dir, args.line, public,
-                       mermaid(people, parents_of, g, pub_ids), today)
+                       mermaid(people, parents_of, g, pub_ids), today, g.source)
     n_priv = write_tree(args.private_dir, args.line, public + private,
-                        mermaid(people, parents_of, g, set(people)), today)
+                        mermaid(people, parents_of, g, set(people)), today, g.source)
     print(f"Public (deceased): {n_pub}  Private (all incl. living): {n_priv}")
 
 
@@ -278,9 +438,15 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     a = sub.add_parser("auth"); a.add_argument("--code", default=os.environ.get("GENI_AUTH_CODE"))
-    sub.add_parser("path")
+    pa = sub.add_parser("path")
     sub.add_parser("whoami")
+    f = sub.add_parser("find")
+    f.add_argument("--gedcom", required=True)
+    f.add_argument("text")
     r = sub.add_parser("run")
+    for sp in (pa, r):
+        sp.add_argument("--gedcom", help="read this GEDCOM file instead of the Geni API")
+        sp.add_argument("--me", help="with --gedcom: your own record id, e.g. @I1@")
     r.add_argument("--line", required=True)
     r.add_argument("--public-dir", required=True)
     r.add_argument("--private-dir", required=True)
@@ -293,9 +459,12 @@ def main():
     elif args.cmd == "whoami":
         me = Geni().get("profile", fields="id,display_name,name")
         print("Signed in as:", me.get("display_name") or me.get("name"), me.get("id"))
+    elif args.cmd == "find":
+        for p in Gedcom(args.gedcom).find(args.text):
+            print(p["gedcom_xref"], describe(p))
     elif args.cmd == "path":
-        g = Geni()
-        for role, pid in zip(["You", "Mother", "Grandmother"], default_path(g)):
+        g = open_source(args)
+        for role, pid in zip(["You", "Mother", "Grandmother"], default_path(g, ref(g, args.me))):
             print(f"{role}: {describe(g.profile(pid))}")
     else:
         run(args)
