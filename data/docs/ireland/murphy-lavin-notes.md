@@ -67,7 +67,19 @@ Notes:
   **Manvel** (founded 1881) (Wikipedia, "Ferry Township, North Dakota"). Whether the township was
   named after this Ferry family is unconfirmed.
 
-## Home movie: James Patrick Murphy Jr.'s 80th birthday (1963)
+## Home movies of James Patrick Murphy Jr. and Hannah Johanna Bennett
+
+Silent Super 8 films shot by their grandson Francis Duane Kryzsko (Patrick's father), on Patrick's YouTube channel.
+
+### 50th wedding anniversary (1956)
+
+- "50th Anniversary, James & Hannah Murphy, 1956" (3:56), North Dakota: https://youtu.be/Gs-COc4Olrc
+- The YouTube description links their Geni profiles: James Jr. (6000000045725822142) and Hannah
+  (6000000045725470668).
+- A 50th anniversary in 1956 implies they married in about 1906.
+
+### 80th birthday (1963)
+
 
 - "80th Birthday Celebration" (1:52), Patrick Kryzsko's YouTube channel: https://youtu.be/jDMOEUal3qs
 - James Patrick Murphy Jr. (29 Jul 1883 – 21 Jul 1969), Patrick's great-grandfather, and his wife
