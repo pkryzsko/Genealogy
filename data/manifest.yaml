@@ -51,3 +51,8 @@ entries:
     truth_level: unverified
     description: Bielefeld sisters link Schultz and Wittmers; 1952 S.S. America arrival of Josef and Elfriede Wittmers.
     last_updated: 2026-10-17
+  - path: docs/poland/krzysko-family-notes.md
+    title: Krzysko / Kryzsko family notes
+    truth_level: unverified
+    description: Andrew Krzyska's family, the Kryzsko/Crystal name changes, and Sylvester Kryzsko (Kryzsko Commons), mainly from Jim Kulas's 2008 PGS-MN article.
+    last_updated: 2026-10-17
