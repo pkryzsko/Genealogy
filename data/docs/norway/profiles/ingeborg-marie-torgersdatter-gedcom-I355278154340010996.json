@@ -1,0 +1,39 @@
+{
+  "id": "gedcom-I355278154340010996",
+  "name": "Ingeborg Marie Torgersdatter",
+  "first_name": "Ingeborg Marie",
+  "last_name": "Torgersdatter",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "29 JUL 1850",
+      "year": 1850,
+      "month": 7,
+      "day": 29
+    },
+    "location": {
+      "place_name": "Skiaker Nedre"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "11 AUG 1850",
+      "year": 1850,
+      "month": 8,
+      "day": 11
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "15 OCT 1941",
+      "year": 1941,
+      "month": 10,
+      "day": 15
+    }
+  },
+  "gedcom_xref": "@I355278154340010996@",
+  "married_name": "Lerretsdalen",
+  "relation": "ancestor",
+  "generation": 2,
+  "living": false
+}

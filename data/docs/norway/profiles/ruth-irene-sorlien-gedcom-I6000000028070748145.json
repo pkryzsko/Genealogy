@@ -1,0 +1,42 @@
+{
+  "id": "gedcom-I6000000028070748145",
+  "name": "Ruth Irene Sorlien",
+  "first_name": "Ruth Irene",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "3 APR 1924",
+      "year": 1924,
+      "month": 4,
+      "day": 3
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "23 AUG 2016",
+      "year": 2016,
+      "month": 8,
+      "day": 23
+    },
+    "location": {
+      "place_name": "Northwood Deaconess Health Center"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "27 AUG 2016",
+      "year": 2016,
+      "month": 8,
+      "day": 27
+    },
+    "location": {
+      "place_name": "Washington Luthern Church Cemetary"
+    }
+  },
+  "gedcom_xref": "@I6000000028070748145@",
+  "married_name": "Berge",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

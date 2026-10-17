@@ -14,7 +14,7 @@ entries:
   - path: docs/norway/peter-sorlien-notes.md
     title: Peter Sorlien notes
     truth_level: unverified
-    description: What the Geni photo pages say about Peter Sorlien; probable great-grandfather, unconfirmed.
+    description: Peter Pettersen Lerretsdalen / Peter Sorlien (1888-1966), Eleanore's father per the GEDCOM; Geni photos.
     last_updated: 2026-10-17
   - path: visual/norway/peter-sorlien-portrait.png
     title: Peter Sorlien portrait
@@ -25,4 +25,29 @@ entries:
     title: Landings Lag Stevne, Hillsboro ND, June 20-21 1952
     truth_level: unverified
     description: Group photo (Geni #77) with Peter Sorlien tagged; numbered people not legible at this size.
+    last_updated: 2026-10-17
+  - path: docs/norway/README.md
+    title: Norwegian line overview
+    truth_level: unverified
+    description: Anchor (Edna Allenora "Eleanore" Sorlien), scope, naming note, and how the import was generated.
+    last_updated: 2026-10-17
+  - path: docs/norway/index.json
+    title: Norwegian line index
+    truth_level: unverified
+    description: 52 people (Eleanore, ancestors, siblings), generated from the Geni GEDCOM export of 26 Jul 2026.
+    last_updated: 2026-10-17
+  - path: docs/norway/profiles/
+    title: Norwegian line profiles
+    truth_level: unverified
+    description: One JSON profile per person in the Norwegian line.
+    last_updated: 2026-10-17
+  - path: docs/norway/tree.mmd
+    title: Norwegian line ancestor diagram
+    truth_level: unverified
+    description: Mermaid diagram of Eleanore Sorlien Schultz and her ancestors.
+    last_updated: 2026-10-17
+  - path: docs/germany/schultz-wittmers-notes.md
+    title: Schultz and Wittmers notes (deceased only)
+    truth_level: unverified
+    description: Bielefeld sisters link Schultz and Wittmers; 1952 S.S. America arrival of Josef and Elfriede Wittmers.
     last_updated: 2026-10-17

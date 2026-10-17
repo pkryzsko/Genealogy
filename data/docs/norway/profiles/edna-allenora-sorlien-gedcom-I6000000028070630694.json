@@ -1,0 +1,31 @@
+{
+  "id": "gedcom-I6000000028070630694",
+  "name": "Edna Allenora Sorlien",
+  "first_name": "Edna Allenora",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "20 NOV 1917",
+      "year": 1917,
+      "month": 11,
+      "day": 20
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "26 JUN 1992",
+      "year": 1992,
+      "month": 6,
+      "day": 26
+    }
+  },
+  "burial": {
+    "recorded": true
+  },
+  "gedcom_xref": "@I6000000028070630694@",
+  "married_name": "Schultz",
+  "relation": "anchor",
+  "generation": 0,
+  "living": false
+}

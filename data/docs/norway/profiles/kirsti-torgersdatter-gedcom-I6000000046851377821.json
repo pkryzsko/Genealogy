@@ -1,0 +1,35 @@
+{
+  "id": "gedcom-I6000000046851377821",
+  "name": "Kirsti Torgersdatter",
+  "first_name": "Kirsti",
+  "last_name": "Torgersdatter",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1741",
+      "year": 1741
+    },
+    "location": {
+      "place_name": "Stenseng u/Gaarder"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "15 JAN 1741",
+      "year": 1741,
+      "month": 1,
+      "day": 15
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "ABT 1809",
+      "year": 1809
+    }
+  },
+  "gedcom_xref": "@I6000000046851377821@",
+  "married_name": "Rustadeneie",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

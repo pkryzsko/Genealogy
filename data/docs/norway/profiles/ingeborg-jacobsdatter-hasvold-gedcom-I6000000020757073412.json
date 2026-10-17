@@ -1,0 +1,20 @@
+{
+  "id": "gedcom-I6000000020757073412",
+  "name": "Ingeborg Jacobsdatter Hasvold",
+  "first_name": "Ingeborg Jacobsdatter",
+  "last_name": "Hasvold",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "5 MAR 1749",
+      "year": 1749,
+      "month": 3,
+      "day": 5
+    }
+  },
+  "gedcom_xref": "@I6000000020757073412@",
+  "married_name": "Hasvold",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

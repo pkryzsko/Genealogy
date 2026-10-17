@@ -1,0 +1,36 @@
+{
+  "id": "gedcom-I6000000028070396739",
+  "name": "Esther Harriet Sorlien",
+  "first_name": "Esther Harriet",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "29 JAN 1920",
+      "year": 1920,
+      "month": 1,
+      "day": 29
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "14 MAR 1920",
+      "year": 1920,
+      "month": 3,
+      "day": 14
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "6 JUN 2014",
+      "year": 2014,
+      "month": 6,
+      "day": 6
+    }
+  },
+  "gedcom_xref": "@I6000000028070396739@",
+  "married_name": "Bjerke",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

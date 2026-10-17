@@ -1,0 +1,36 @@
+{
+  "id": "gedcom-I6000000045351246992",
+  "name": "Anne Helgesdtr",
+  "first_name": "Anne",
+  "last_name": "Helgesdtr",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "7 DEC 1830",
+      "year": 1830,
+      "month": 12,
+      "day": 7
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "6 FEB 1831",
+      "year": 1831,
+      "month": 2,
+      "day": 6
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "27 FEB 1923",
+      "year": 1923,
+      "month": 2,
+      "day": 27
+    }
+  },
+  "gedcom_xref": "@I6000000045351246992@",
+  "married_name": "Krogen",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

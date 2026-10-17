@@ -1,0 +1,57 @@
+{
+  "id": "gedcom-I355277364510005568",
+  "name": "Petter Pedersen",
+  "first_name": "Petter",
+  "last_name": "Pedersen",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "13 MAY 1849",
+      "year": 1849,
+      "month": 5,
+      "day": 13
+    },
+    "location": {
+      "place_name": "Lomsdalen"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "1 JUL 1849",
+      "year": 1849,
+      "month": 7,
+      "day": 1
+    },
+    "location": {
+      "place_name": "Hov"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "23 MAY 1925",
+      "year": 1925,
+      "month": 5,
+      "day": 23
+    },
+    "location": {
+      "place_name": "Granly"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "29 MAY 1925",
+      "year": 1925,
+      "month": 5,
+      "day": 29
+    },
+    "location": {
+      "place_name": "Østsinni Kirke"
+    }
+  },
+  "occupation": "Farmer",
+  "gedcom_xref": "@I355277364510005568@",
+  "married_name": "Lerretsdalen",
+  "relation": "ancestor",
+  "generation": 2,
+  "living": false
+}

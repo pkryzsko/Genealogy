@@ -1,0 +1,35 @@
+{
+  "id": "gedcom-I6000000049703183001",
+  "name": "Anders Torgersen Berg",
+  "first_name": "Anders Torgersen",
+  "last_name": "Berg",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1788",
+      "year": 1788
+    },
+    "location": {
+      "place_name": "Lunde"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "28 DEC 1788",
+      "year": 1788,
+      "month": 12,
+      "day": 28
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1841",
+      "year": 1841
+    }
+  },
+  "gedcom_xref": "@I6000000049703183001@",
+  "married_name": "Berg",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

@@ -1,0 +1,35 @@
+{
+  "id": "gedcom-I6000000049703393824",
+  "name": "Johanne Eriksdatter Skøyen",
+  "first_name": "Johanne Eriksdatter",
+  "last_name": "Skøyen",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1792",
+      "year": 1792
+    },
+    "location": {
+      "place_name": "Skinderud"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "12 FEB 1792",
+      "year": 1792,
+      "month": 2,
+      "day": 12
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1864",
+      "year": 1864
+    }
+  },
+  "gedcom_xref": "@I6000000049703393824@",
+  "married_name": "Skøyen",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

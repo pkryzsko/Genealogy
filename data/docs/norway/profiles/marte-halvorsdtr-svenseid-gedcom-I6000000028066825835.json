@@ -1,0 +1,31 @@
+{
+  "id": "gedcom-I6000000028066825835",
+  "name": "Marte Halvorsdtr Svenseid",
+  "first_name": "Marte Halvorsdtr",
+  "last_name": "Svenseid",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "29 AUG 1818",
+      "year": 1818,
+      "month": 8,
+      "day": 29
+    },
+    "location": {
+      "place_name": "Svenseid"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "3 SEP 1878",
+      "year": 1878,
+      "month": 9,
+      "day": 3
+    }
+  },
+  "gedcom_xref": "@I6000000028066825835@",
+  "married_name": "Brekke",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

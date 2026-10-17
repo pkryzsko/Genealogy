@@ -1,0 +1,23 @@
+{
+  "id": "gedcom-I6000000020757130096",
+  "name": "Christen Hansen Hasvold",
+  "first_name": "Christen Hansen",
+  "last_name": "Hasvold",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "13 JAN 1754",
+      "year": 1754,
+      "month": 1,
+      "day": 13
+    },
+    "location": {
+      "place_name": "Odneseie"
+    }
+  },
+  "gedcom_xref": "@I6000000020757130096@",
+  "married_name": "Hasvold",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gedcom-I6000000028070808465",
+  "name": "Russell Duane Sorlien",
+  "first_name": "Russell Duane",
+  "last_name": "Sorlien",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "28 SEP 1933",
+      "year": 1933,
+      "month": 9,
+      "day": 28
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1 OCT 1933",
+      "year": 1933,
+      "month": 10,
+      "day": 1
+    }
+  },
+  "gedcom_xref": "@I6000000028070808465@",
+  "married_name": "Sorlien",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

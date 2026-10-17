@@ -1,0 +1,32 @@
+{
+  "id": "gedcom-I6000000024237802894",
+  "name": "Lars Olsen Haukaas",
+  "first_name": "Lars Olsen",
+  "last_name": "Haukaas",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1743",
+      "year": 1743
+    },
+    "location": {
+      "place_name": "Haukaas"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "2 FEB 1743",
+      "year": 1743,
+      "month": 2,
+      "day": 2
+    }
+  },
+  "death": {
+    "recorded": true
+  },
+  "gedcom_xref": "@I6000000024237802894@",
+  "married_name": "Haukaas",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

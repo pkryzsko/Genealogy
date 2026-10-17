@@ -1,0 +1,44 @@
+{
+  "id": "gedcom-I6000000028069624874",
+  "name": "Gunhild Thorjusen-Vettleson",
+  "first_name": "Gunhild",
+  "last_name": "Thorjusen-Vettleson",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "29 SEP 1864",
+      "year": 1864,
+      "month": 9,
+      "day": 29
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "1 NOV 1864",
+      "year": 1864,
+      "month": 11,
+      "day": 1
+    },
+    "location": {
+      "place_name": "Little Iowa Norsk-evangelisk Lutherske"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "10 SEP 1910",
+      "year": 1910,
+      "month": 9,
+      "day": 10
+    }
+  },
+  "burial": {
+    "location": {
+      "place_name": "Rose Hill Cemetary"
+    }
+  },
+  "gedcom_xref": "@I6000000028069624874@",
+  "married_name": "Erickson-Sorlien",
+  "relation": "ancestor",
+  "generation": 2,
+  "living": false
+}

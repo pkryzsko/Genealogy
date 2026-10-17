@@ -1,0 +1,32 @@
+{
+  "id": "gedcom-I6000000030992388053",
+  "name": "Dorte Pedersdatter Øverset",
+  "first_name": "Dorte Pedersdatter",
+  "last_name": "Øverset",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1748",
+      "year": 1748
+    },
+    "location": {
+      "place_name": "Øverset"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "24 NOV 1748",
+      "year": 1748,
+      "month": 11,
+      "day": 24
+    }
+  },
+  "death": {
+    "recorded": true
+  },
+  "gedcom_xref": "@I6000000030992388053@",
+  "married_name": "Øverset",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

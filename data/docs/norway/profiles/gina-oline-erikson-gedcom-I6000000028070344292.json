@@ -1,0 +1,33 @@
+{
+  "id": "gedcom-I6000000028070344292",
+  "name": "Gina Oline Erikson",
+  "first_name": "Gina Oline",
+  "last_name": "Erikson",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1 JUL 1893",
+      "year": 1893,
+      "month": 7,
+      "day": 1
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "31 OCT 1969",
+      "year": 1969,
+      "month": 10,
+      "day": 31
+    }
+  },
+  "burial": {
+    "location": {
+      "place_name": "Bethany Cemetery"
+    }
+  },
+  "gedcom_xref": "@I6000000028070344292@",
+  "married_name": "Sorlien",
+  "relation": "ancestor",
+  "generation": 1,
+  "living": false
+}

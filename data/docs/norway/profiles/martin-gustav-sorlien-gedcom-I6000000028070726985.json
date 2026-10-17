@@ -1,0 +1,28 @@
+{
+  "id": "gedcom-I6000000028070726985",
+  "name": "Martin Gustav Sorlien",
+  "first_name": "Martin Gustav",
+  "last_name": "Sorlien",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "5 SEP 1910",
+      "year": 1910,
+      "month": 9,
+      "day": 5
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1 APR 1981",
+      "year": 1981,
+      "month": 4,
+      "day": 1
+    }
+  },
+  "gedcom_xref": "@I6000000028070726985@",
+  "married_name": "Sorlien",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

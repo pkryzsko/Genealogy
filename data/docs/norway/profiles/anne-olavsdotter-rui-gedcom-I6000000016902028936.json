@@ -1,0 +1,41 @@
+{
+  "id": "gedcom-I6000000016902028936",
+  "name": "Anne Olavsdotter Rui",
+  "first_name": "Anne Olavsdotter",
+  "last_name": "Rui",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "JAN 1773",
+      "year": 1773,
+      "month": 1
+    },
+    "location": {
+      "place_name": "Rui"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "12 OCT 1851",
+      "year": 1851,
+      "month": 10,
+      "day": 12
+    },
+    "location": {
+      "place_name": "Brekke"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "17 OCT 1851",
+      "year": 1851,
+      "month": 10,
+      "day": 17
+    }
+  },
+  "gedcom_xref": "@I6000000016902028936@",
+  "married_name": "Brekke",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

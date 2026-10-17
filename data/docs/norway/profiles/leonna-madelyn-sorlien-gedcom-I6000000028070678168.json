@@ -1,0 +1,28 @@
+{
+  "id": "gedcom-I6000000028070678168",
+  "name": "Leonna Madelyn Sorlien",
+  "first_name": "Leonna Madelyn",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "13 JUL 1922",
+      "year": 1922,
+      "month": 7,
+      "day": 13
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "22 APR 1991",
+      "year": 1991,
+      "month": 4,
+      "day": 22
+    }
+  },
+  "gedcom_xref": "@I6000000028070678168@",
+  "married_name": "Verke",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

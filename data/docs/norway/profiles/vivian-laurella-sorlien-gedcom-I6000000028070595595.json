@@ -1,0 +1,31 @@
+{
+  "id": "gedcom-I6000000028070595595",
+  "name": "Vivian Laurella Sorlien",
+  "first_name": "Vivian Laurella",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "28 JAN 1929",
+      "year": 1929,
+      "month": 1,
+      "day": 28
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "31 JUL 2019",
+      "year": 2019,
+      "month": 7,
+      "day": 31
+    }
+  },
+  "burial": {
+    "recorded": true
+  },
+  "gedcom_xref": "@I6000000028070595595@",
+  "married_name": "Strande",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

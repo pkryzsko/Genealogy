@@ -1,0 +1,33 @@
+{
+  "id": "gedcom-I6000000021492693259",
+  "name": "Torjus Vetlesson Hosum",
+  "first_name": "Torjus Vetlesson",
+  "last_name": "Hosum",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "SEP 1774",
+      "year": 1774,
+      "month": 9
+    },
+    "location": {
+      "place_name": "Hosum"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "13 FEB 1858",
+      "year": 1858,
+      "month": 2,
+      "day": 13
+    },
+    "location": {
+      "place_name": "Brekke"
+    }
+  },
+  "gedcom_xref": "@I6000000021492693259@",
+  "married_name": "Brekke",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

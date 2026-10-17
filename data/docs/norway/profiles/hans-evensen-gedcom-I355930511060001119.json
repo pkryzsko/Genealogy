@@ -1,0 +1,39 @@
+{
+  "id": "gedcom-I355930511060001119",
+  "name": "Hans Evensen",
+  "first_name": "Hans",
+  "last_name": "Evensen",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "12 SEP 1854",
+      "year": 1854,
+      "month": 9,
+      "day": 12
+    },
+    "location": {
+      "place_name": "Tønset"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "10 DEC 1854",
+      "year": 1854,
+      "month": 12,
+      "day": 10
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "23 JAN 1934",
+      "year": 1934,
+      "month": 1,
+      "day": 23
+    }
+  },
+  "gedcom_xref": "@I355930511060001119@",
+  "married_name": "Jordet (Erickson)",
+  "relation": "ancestor",
+  "generation": 2,
+  "living": false
+}

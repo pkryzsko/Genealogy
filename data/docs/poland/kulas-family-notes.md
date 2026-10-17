@@ -4,8 +4,15 @@ truth: unverified
 # Kulas family notes (Polish line, Kryzsko side)
 
 The Kulas family are cousins of Patrick Kryzsko on the Kryzsko side. Spelling variants to
-search: **Kryzsko**, **Krzysko**, **Kulas**. How the Kulas family connects to the Kryzsko
-line is not stated in these sources. Confirm it from the family GEDCOM.
+search: **Kryzsko**, **Krzysko**, **Kulas**.
+
+**How they connect** [Geni GEDCOM export (26 Jul 2026)]: Patrick's
+grandfather Alfred James Krzysko (1907–1995) had a
+sister, **Clara Maria Krzysko** (1905–2002), who married **Ludwig Joseph Marion "Louis" Kulas**
+(1892–1976). Their sons (the authors of sources 1–3; living, so details are in the private repository)
+are first cousins of Patrick's father, Francis Duane Kryzsko (1935–2017). **Harry Kulas** was a son of Louis's
+brother **Anthony F. Kulas** (1872–1952), so Harry was James's first cousin, as source 2 says.
+He was related to Patrick by marriage, not by blood.
 
 All facts below come from family-written histories (secondary sources). Check them against
 records before promoting this file to `source`.
@@ -42,7 +49,7 @@ records before promoting this file to `source`.
 
 ## Open questions
 
-- How does the Kulas family connect to Patrick Kryzsko?
+- Anton/Anthony in source 2 vs Anthony F. Kulas (1872–1952) in the GEDCOM: confirm they are the same person.
 - Names of Harry's two sisters, and dates for Anton, Frances and Cyril.
 - Who is Frances L. Lamb's second husband?
 

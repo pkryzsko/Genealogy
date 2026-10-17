@@ -1,0 +1,40 @@
+{
+  "id": "gedcom-I6000000046850582282",
+  "name": "Amund Engebretsen Rustadeneie",
+  "first_name": "Amund Engebretsen",
+  "last_name": "Rustadeneie",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1742",
+      "year": 1742
+    },
+    "location": {
+      "place_name": "Bardalen/Mortenstuen"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "2 DEC 1742",
+      "year": 1742,
+      "month": 12,
+      "day": 2
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "30 MAY 1792",
+      "year": 1792,
+      "month": 5,
+      "day": 30
+    },
+    "location": {
+      "place_name": "Bardalen"
+    }
+  },
+  "gedcom_xref": "@I6000000046850582282@",
+  "married_name": "Rustadeneie",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

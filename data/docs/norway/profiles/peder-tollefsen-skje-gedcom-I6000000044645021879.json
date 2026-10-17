@@ -1,0 +1,50 @@
+{
+  "id": "gedcom-I6000000044645021879",
+  "name": "Peder Tollefsen Skje",
+  "first_name": "Peder Tollefsen",
+  "last_name": "Skje",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "9 MAR 1817",
+      "year": 1817,
+      "month": 3,
+      "day": 9
+    },
+    "location": {
+      "place_name": "Skje"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "26 MAR 1817",
+      "year": 1817,
+      "month": 3,
+      "day": 26
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "5 OCT 1896",
+      "year": 1896,
+      "month": 10,
+      "day": 5
+    },
+    "location": {
+      "place_name": "Petersborg"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "24 OCT 1896",
+      "year": 1896,
+      "month": 10,
+      "day": 24
+    }
+  },
+  "gedcom_xref": "@I6000000044645021879@",
+  "married_name": "Skje",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

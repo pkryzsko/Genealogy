@@ -1,0 +1,18 @@
+{
+  "id": "gedcom-I6000000104984002838",
+  "name": "Guri Hansdatter Krogen",
+  "first_name": "Guri Hansdatter",
+  "last_name": "Krogen",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "ABT 1808",
+      "year": 1808
+    }
+  },
+  "gedcom_xref": "@I6000000104984002838@",
+  "married_name": "Krogen",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "gedcom-I6000000028070864110",
+  "name": "Pearl Geanette Sorlien",
+  "first_name": "Pearl Geanette",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "16 FEB 1914",
+      "year": 1914,
+      "month": 2,
+      "day": 16
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "16 FEB 1971",
+      "year": 1971,
+      "month": 2,
+      "day": 16
+    }
+  },
+  "burial": {
+    "recorded": true
+  },
+  "occupation": "House wife",
+  "gedcom_xref": "@I6000000028070864110@",
+  "married_name": "Hanson",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

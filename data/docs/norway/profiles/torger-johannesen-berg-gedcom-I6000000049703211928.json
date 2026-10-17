@@ -1,0 +1,38 @@
+{
+  "id": "gedcom-I6000000049703211928",
+  "name": "Torger Johannesen Berg",
+  "first_name": "Torger Johannesen",
+  "last_name": "Berg",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1754",
+      "year": 1754
+    },
+    "location": {
+      "place_name": "Berg"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "8 DEC 1754",
+      "year": 1754,
+      "month": 12,
+      "day": 8
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1813",
+      "year": 1813
+    },
+    "location": {
+      "place_name": "Aure nordre, Østsinni, Nordre-Land, Oppland"
+    }
+  },
+  "gedcom_xref": "@I6000000049703211928@",
+  "married_name": "Berg",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

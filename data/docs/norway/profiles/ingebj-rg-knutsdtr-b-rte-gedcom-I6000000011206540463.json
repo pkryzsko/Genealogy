@@ -1,0 +1,24 @@
+{
+  "id": "gedcom-I6000000011206540463",
+  "name": "Ingebjørg Knutsdtr Børte",
+  "first_name": "Ingebjørg Knutsdtr",
+  "last_name": "Børte",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1792",
+      "year": 1792
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1878",
+      "year": 1878
+    }
+  },
+  "gedcom_xref": "@I6000000011206540463@",
+  "married_name": "Børte",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

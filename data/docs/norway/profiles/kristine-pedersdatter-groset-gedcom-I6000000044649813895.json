@@ -1,0 +1,37 @@
+{
+  "id": "gedcom-I6000000044649813895",
+  "name": "Kristine Pedersdatter Groset",
+  "first_name": "Kristine Pedersdatter",
+  "last_name": "Groset",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "ABT 1777",
+      "year": 1777
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "12 OCT 1839",
+      "year": 1839,
+      "month": 10,
+      "day": 12
+    },
+    "location": {
+      "place_name": "Granumseie"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "22 OCT 1839",
+      "year": 1839,
+      "month": 10,
+      "day": 22
+    }
+  },
+  "gedcom_xref": "@I6000000044649813895@",
+  "married_name": "Groset",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

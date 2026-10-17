@@ -1,0 +1,28 @@
+{
+  "id": "gedcom-I6000000028070749333",
+  "name": "Gilbert Harris Sorlien",
+  "first_name": "Gilbert Harris",
+  "last_name": "Sorlien",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "24 DEC 1915",
+      "year": 1915,
+      "month": 12,
+      "day": 24
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "25 SEP 1986",
+      "year": 1986,
+      "month": 9,
+      "day": 25
+    }
+  },
+  "gedcom_xref": "@I6000000028070749333@",
+  "married_name": "Sorlien",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

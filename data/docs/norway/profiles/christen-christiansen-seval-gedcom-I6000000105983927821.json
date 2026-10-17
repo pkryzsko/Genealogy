@@ -1,0 +1,37 @@
+{
+  "id": "gedcom-I6000000105983927821",
+  "name": "Christen Christiansen Seval",
+  "first_name": "Christen Christiansen",
+  "last_name": "Seval",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "ABT 1789",
+      "year": 1789
+    },
+    "location": {
+      "place_name": "Sæter"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "29 SEP 1789",
+      "year": 1789,
+      "month": 9,
+      "day": 29
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "5 FEB 1866",
+      "year": 1866,
+      "month": 2,
+      "day": 5
+    }
+  },
+  "gedcom_xref": "@I6000000105983927821@",
+  "married_name": "Seval",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

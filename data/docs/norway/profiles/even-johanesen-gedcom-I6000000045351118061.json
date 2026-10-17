@@ -1,0 +1,18 @@
+{
+  "id": "gedcom-I6000000045351118061",
+  "name": "Even Johanesen",
+  "first_name": "Even",
+  "last_name": "Johanesen",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1828",
+      "year": 1828
+    }
+  },
+  "gedcom_xref": "@I6000000045351118061@",
+  "married_name": "Johanesen",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

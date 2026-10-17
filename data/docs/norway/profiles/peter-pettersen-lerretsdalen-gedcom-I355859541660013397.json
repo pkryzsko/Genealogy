@@ -1,0 +1,39 @@
+{
+  "id": "gedcom-I355859541660013397",
+  "name": "Peter Pettersen Lerretsdalen",
+  "first_name": "Peter Pettersen",
+  "last_name": "Lerretsdalen",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "31 JAN 1888",
+      "year": 1888,
+      "month": 1,
+      "day": 31
+    },
+    "location": {
+      "place_name": "Lerretsdalen u/Gjevle"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "11 MAR 1888",
+      "year": 1888,
+      "month": 3,
+      "day": 11
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "25 JAN 1966",
+      "year": 1966,
+      "month": 1,
+      "day": 25
+    }
+  },
+  "gedcom_xref": "@I355859541660013397@",
+  "married_name": "Lerretsdalen",
+  "relation": "ancestor",
+  "generation": 1,
+  "living": false
+}

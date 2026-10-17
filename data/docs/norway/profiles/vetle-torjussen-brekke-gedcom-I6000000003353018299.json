@@ -1,0 +1,38 @@
+{
+  "id": "gedcom-I6000000003353018299",
+  "name": "Vetle Torjussen Brekke",
+  "first_name": "Vetle Torjussen",
+  "last_name": "Brekke",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "29 NOV 1814",
+      "year": 1814,
+      "month": 11,
+      "day": 29
+    },
+    "location": {
+      "place_name": "Lien"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "29 NOV 1814",
+      "year": 1814,
+      "month": 11,
+      "day": 29
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "17 JAN 1893",
+      "year": 1893,
+      "month": 1,
+      "day": 17
+    }
+  },
+  "gedcom_xref": "@I6000000003353018299@",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

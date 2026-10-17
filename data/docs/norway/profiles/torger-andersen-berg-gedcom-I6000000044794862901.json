@@ -1,0 +1,51 @@
+{
+  "id": "gedcom-I6000000044794862901",
+  "name": "Torger Andersen Berg",
+  "first_name": "Torger Andersen",
+  "last_name": "Berg",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "6 FEB 1819",
+      "year": 1819,
+      "month": 2,
+      "day": 6
+    },
+    "location": {
+      "place_name": "Berg"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "22 FEB 1819",
+      "year": 1819,
+      "month": 2,
+      "day": 22
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "15 FEB 1877",
+      "year": 1877,
+      "month": 2,
+      "day": 15
+    },
+    "location": {
+      "place_name": "Sorlien"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "28 FEB 1877",
+      "year": 1877,
+      "month": 2,
+      "day": 28
+    }
+  },
+  "occupation": "Husmand med Jord",
+  "gedcom_xref": "@I6000000044794862901@",
+  "married_name": "Berg",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

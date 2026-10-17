@@ -1,0 +1,48 @@
+{
+  "id": "gedcom-I6000000030992642892",
+  "name": "Tollef Larsen Haukaas",
+  "first_name": "Tollef Larsen",
+  "last_name": "Haukaas",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1781",
+      "year": 1781
+    },
+    "location": {
+      "place_name": "Haukaas"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "11 MAR 1781",
+      "year": 1781,
+      "month": 3,
+      "day": 11
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "18 JUL 1860",
+      "year": 1860,
+      "month": 7,
+      "day": 18
+    },
+    "location": {
+      "place_name": "Granumseie"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "25 JUL 1860",
+      "year": 1860,
+      "month": 7,
+      "day": 25
+    }
+  },
+  "gedcom_xref": "@I6000000030992642892@",
+  "married_name": "Haukaas",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

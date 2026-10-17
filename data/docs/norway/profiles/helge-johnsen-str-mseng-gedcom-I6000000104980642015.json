@@ -1,0 +1,39 @@
+{
+  "id": "gedcom-I6000000104980642015",
+  "name": "Helge Johnsen Strømseng",
+  "first_name": "Helge Johnsen",
+  "last_name": "Strømseng",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "5 AUG 1810",
+      "year": 1810,
+      "month": 8,
+      "day": 5
+    },
+    "location": {
+      "place_name": "Strømseng"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "12 AUG 1810",
+      "year": 1810,
+      "month": 8,
+      "day": 12
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "4 APR 1875",
+      "year": 1875,
+      "month": 4,
+      "day": 4
+    }
+  },
+  "gedcom_xref": "@I6000000104980642015@",
+  "married_name": "Strømseng",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

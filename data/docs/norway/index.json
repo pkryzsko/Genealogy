@@ -1,0 +1,528 @@
+{
+  "line": "norway",
+  "imported": "2026-10-17",
+  "source": "GEDCOM file export-Forest.ged",
+  "count": 52,
+  "profiles": [
+    {
+      "id": "gedcom-I6000000028070630694",
+      "name": "Edna Allenora Sorlien",
+      "relation": "anchor",
+      "generation": 0,
+      "birth_year": 1917,
+      "death_year": 1992,
+      "file": "profiles/edna-allenora-sorlien-gedcom-I6000000028070630694.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070396739",
+      "name": "Esther Harriet Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1920,
+      "death_year": 2014,
+      "file": "profiles/esther-harriet-sorlien-gedcom-I6000000028070396739.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070749333",
+      "name": "Gilbert Harris Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1915,
+      "death_year": 1986,
+      "file": "profiles/gilbert-harris-sorlien-gedcom-I6000000028070749333.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070918880",
+      "name": "Hazel Palma Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1912,
+      "death_year": 1972,
+      "file": "profiles/hazel-palma-sorlien-gedcom-I6000000028070918880.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070678168",
+      "name": "Leonna Madelyn Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1922,
+      "death_year": 1991,
+      "file": "profiles/leonna-madelyn-sorlien-gedcom-I6000000028070678168.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070726985",
+      "name": "Martin Gustav Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1910,
+      "death_year": 1981,
+      "file": "profiles/martin-gustav-sorlien-gedcom-I6000000028070726985.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070415288",
+      "name": "Nordeen Goodwin Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1927,
+      "death_year": 2011,
+      "file": "profiles/nordeen-goodwin-sorlien-gedcom-I6000000028070415288.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070864110",
+      "name": "Pearl Geanette Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1914,
+      "death_year": 1971,
+      "file": "profiles/pearl-geanette-sorlien-gedcom-I6000000028070864110.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070808465",
+      "name": "Russell Duane Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1933,
+      "death_year": 1933,
+      "file": "profiles/russell-duane-sorlien-gedcom-I6000000028070808465.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070748145",
+      "name": "Ruth Irene Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1924,
+      "death_year": 2016,
+      "file": "profiles/ruth-irene-sorlien-gedcom-I6000000028070748145.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070742472",
+      "name": "Vergil Ellsworth Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1932,
+      "death_year": 1983,
+      "file": "profiles/vergil-ellsworth-sorlien-gedcom-I6000000028070742472.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070595595",
+      "name": "Vivian Laurella Sorlien",
+      "relation": "sibling",
+      "generation": 0,
+      "birth_year": 1929,
+      "death_year": 2019,
+      "file": "profiles/vivian-laurella-sorlien-gedcom-I6000000028070595595.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028070344292",
+      "name": "Gina Oline Erikson",
+      "relation": "ancestor",
+      "generation": 1,
+      "birth_year": 1893,
+      "death_year": 1969,
+      "file": "profiles/gina-oline-erikson-gedcom-I6000000028070344292.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I355859541660013397",
+      "name": "Peter Pettersen Lerretsdalen",
+      "relation": "ancestor",
+      "generation": 1,
+      "birth_year": 1888,
+      "death_year": 1966,
+      "file": "profiles/peter-pettersen-lerretsdalen-gedcom-I355859541660013397.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028069624874",
+      "name": "Gunhild Thorjusen-Vettleson",
+      "relation": "ancestor",
+      "generation": 2,
+      "birth_year": 1864,
+      "death_year": 1910,
+      "file": "profiles/gunhild-thorjusen-vettleson-gedcom-I6000000028069624874.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I355930511060001119",
+      "name": "Hans Evensen",
+      "relation": "ancestor",
+      "generation": 2,
+      "birth_year": 1854,
+      "death_year": 1934,
+      "file": "profiles/hans-evensen-gedcom-I355930511060001119.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I355278154340010996",
+      "name": "Ingeborg Marie Torgersdatter",
+      "relation": "ancestor",
+      "generation": 2,
+      "birth_year": 1850,
+      "death_year": 1941,
+      "file": "profiles/ingeborg-marie-torgersdatter-gedcom-I355278154340010996.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I355277364510005568",
+      "name": "Petter Pedersen",
+      "relation": "ancestor",
+      "generation": 2,
+      "birth_year": 1849,
+      "death_year": 1925,
+      "file": "profiles/petter-pedersen-gedcom-I355277364510005568.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000045351246992",
+      "name": "Anne Helgesdtr",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1830,
+      "death_year": 1923,
+      "file": "profiles/anne-helgesdtr-gedcom-I6000000045351246992.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000044644657181",
+      "name": "Anne Marie Kristiansdatter",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1814,
+      "death_year": 1892,
+      "file": "profiles/anne-marie-kristiansdatter-gedcom-I6000000044644657181.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000045351118061",
+      "name": "Even Johanesen",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1828,
+      "death_year": null,
+      "file": "profiles/even-johanesen-gedcom-I6000000045351118061.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000044794478190",
+      "name": "Ingeborg Marie Christensdatter Hasvold",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1815,
+      "death_year": 1850,
+      "file": "profiles/ingeborg-marie-christensdatter-hasvold-gedcom-I6000000044794478190.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000028066825835",
+      "name": "Marte Halvorsdtr Svenseid",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1818,
+      "death_year": 1878,
+      "file": "profiles/marte-halvorsdtr-svenseid-gedcom-I6000000028066825835.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000044645021879",
+      "name": "Peder Tollefsen Skje",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1817,
+      "death_year": 1896,
+      "file": "profiles/peder-tollefsen-skje-gedcom-I6000000044645021879.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000044794862901",
+      "name": "Torger Andersen Berg",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1819,
+      "death_year": 1877,
+      "file": "profiles/torger-andersen-berg-gedcom-I6000000044794862901.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000003353018299",
+      "name": "Vetle Torjussen Brekke",
+      "relation": "ancestor",
+      "generation": 3,
+      "birth_year": 1814,
+      "death_year": 1893,
+      "file": "profiles/vetle-torjussen-brekke-gedcom-I6000000003353018299.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703183001",
+      "name": "Anders Torgersen Berg",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1788,
+      "death_year": 1841,
+      "file": "profiles/anders-torgersen-berg-gedcom-I6000000049703183001.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000016902028936",
+      "name": "Anne Olavsdotter Rui",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1773,
+      "death_year": 1851,
+      "file": "profiles/anne-olavsdotter-rui-gedcom-I6000000016902028936.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000046851261868",
+      "name": "Berte Syversdatter Vilberg",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1771,
+      "death_year": 1851,
+      "file": "profiles/berte-syversdatter-vilberg-gedcom-I6000000046851261868.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000105983927821",
+      "name": "Christen Christiansen Seval",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1789,
+      "death_year": 1866,
+      "file": "profiles/christen-christiansen-seval-gedcom-I6000000105983927821.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000104984002838",
+      "name": "Guri Hansdatter Krogen",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1808,
+      "death_year": null,
+      "file": "profiles/guri-hansdatter-krogen-gedcom-I6000000104984002838.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000006899075568",
+      "name": "Halvor Halvorson Svenseid",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1789,
+      "death_year": 1865,
+      "file": "profiles/halvor-halvorson-svenseid-gedcom-I6000000006899075568.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000104980642015",
+      "name": "Helge Johnsen Strømseng",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1810,
+      "death_year": 1875,
+      "file": "profiles/helge-johnsen-str-mseng-gedcom-I6000000104980642015.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000011206540463",
+      "name": "Ingebjørg Knutsdtr Børte",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1792,
+      "death_year": 1878,
+      "file": "profiles/ingebj-rg-knutsdtr-b-rte-gedcom-I6000000011206540463.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000020570633291",
+      "name": "Ingeborg Christensdatter Hasvold",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1791,
+      "death_year": 1855,
+      "file": "profiles/ingeborg-christensdatter-hasvold-gedcom-I6000000020570633291.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703393824",
+      "name": "Johanne Eriksdatter Skøyen",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1792,
+      "death_year": 1864,
+      "file": "profiles/johanne-eriksdatter-sk-yen-gedcom-I6000000049703393824.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000046851243854",
+      "name": "Kristian Amundsen Vilberg",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1780,
+      "death_year": 1858,
+      "file": "profiles/kristian-amundsen-vilberg-gedcom-I6000000046851243854.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000044649813895",
+      "name": "Kristine Pedersdatter Groset",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1777,
+      "death_year": 1839,
+      "file": "profiles/kristine-pedersdatter-groset-gedcom-I6000000044649813895.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000030992642892",
+      "name": "Tollef Larsen Haukaas",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1781,
+      "death_year": 1860,
+      "file": "profiles/tollef-larsen-haukaas-gedcom-I6000000030992642892.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000021492693259",
+      "name": "Torjus Vetlesson Hosum",
+      "relation": "ancestor",
+      "generation": 4,
+      "birth_year": 1774,
+      "death_year": 1858,
+      "file": "profiles/torjus-vetlesson-hosum-gedcom-I6000000021492693259.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000046850582282",
+      "name": "Amund Engebretsen Rustadeneie",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1742,
+      "death_year": 1792,
+      "file": "profiles/amund-engebretsen-rustadeneie-gedcom-I6000000046850582282.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000020757130096",
+      "name": "Christen Hansen Hasvold",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1754,
+      "death_year": null,
+      "file": "profiles/christen-hansen-hasvold-gedcom-I6000000020757130096.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000092447082842",
+      "name": "Christian Christensen Dybdal",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1759,
+      "death_year": null,
+      "file": "profiles/christian-christensen-dybdal-gedcom-I6000000092447082842.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000030992388053",
+      "name": "Dorte Pedersdatter Øverset",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1748,
+      "death_year": null,
+      "file": "profiles/dorte-pedersdatter-verset-gedcom-I6000000030992388053.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703449888",
+      "name": "Erik Tordsen",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1743,
+      "death_year": 1813,
+      "file": "profiles/erik-tordsen-gedcom-I6000000049703449888.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000020757073412",
+      "name": "Ingeborg Jacobsdatter Hasvold",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1749,
+      "death_year": null,
+      "file": "profiles/ingeborg-jacobsdatter-hasvold-gedcom-I6000000020757073412.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000046851377821",
+      "name": "Kirsti Torgersdatter",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1741,
+      "death_year": 1809,
+      "file": "profiles/kirsti-torgersdatter-gedcom-I6000000046851377821.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000105981626032",
+      "name": "Kjersti Nilsdatter Valhovd",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1750,
+      "death_year": null,
+      "file": "profiles/kjersti-nilsdatter-valhovd-gedcom-I6000000105981626032.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703475828",
+      "name": "Kristine Andersdatter Berg",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1763,
+      "death_year": 1830,
+      "file": "profiles/kristine-andersdatter-berg-gedcom-I6000000049703475828.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000024237802894",
+      "name": "Lars Olsen Haukaas",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1743,
+      "death_year": null,
+      "file": "profiles/lars-olsen-haukaas-gedcom-I6000000024237802894.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703506860",
+      "name": "Siri Mathiasdatter",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1748,
+      "death_year": 1828,
+      "file": "profiles/siri-mathiasdatter-gedcom-I6000000049703506860.json",
+      "geni_url": null
+    },
+    {
+      "id": "gedcom-I6000000049703211928",
+      "name": "Torger Johannesen Berg",
+      "relation": "ancestor",
+      "generation": 5,
+      "birth_year": 1754,
+      "death_year": 1813,
+      "file": "profiles/torger-johannesen-berg-gedcom-I6000000049703211928.json",
+      "geni_url": null
+    }
+  ]
+}

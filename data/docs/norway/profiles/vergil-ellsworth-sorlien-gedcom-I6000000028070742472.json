@@ -1,0 +1,27 @@
+{
+  "id": "gedcom-I6000000028070742472",
+  "name": "Vergil Ellsworth Sorlien",
+  "first_name": "Vergil Ellsworth",
+  "last_name": "Sorlien",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "20 APR 1932",
+      "year": 1932,
+      "month": 4,
+      "day": 20
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "17 SEP 1983",
+      "year": 1983,
+      "month": 9,
+      "day": 17
+    }
+  },
+  "gedcom_xref": "@I6000000028070742472@",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

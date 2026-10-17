@@ -1,0 +1,40 @@
+{
+  "id": "gedcom-I6000000046851243854",
+  "name": "Kristian Amundsen Vilberg",
+  "first_name": "Kristian Amundsen",
+  "last_name": "Vilberg",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1780",
+      "year": 1780
+    },
+    "location": {
+      "place_name": "Rustaden"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "1 OCT 1780",
+      "year": 1780,
+      "month": 10,
+      "day": 1
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "16 OCT 1858",
+      "year": 1858,
+      "month": 10,
+      "day": 16
+    },
+    "location": {
+      "place_name": "Prestegården Fluberg, Søndre Land, Oppland, Norge"
+    }
+  },
+  "gedcom_xref": "@I6000000046851243854@",
+  "married_name": "Vilberg",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

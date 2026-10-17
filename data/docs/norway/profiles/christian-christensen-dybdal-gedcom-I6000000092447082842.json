@@ -1,0 +1,31 @@
+{
+  "id": "gedcom-I6000000092447082842",
+  "name": "Christian Christensen Dybdal",
+  "first_name": "Christian Christensen",
+  "last_name": "Dybdal",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "6 MAY 1759",
+      "year": 1759,
+      "month": 5,
+      "day": 6
+    },
+    "location": {
+      "place_name": "Skjervenstuen"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "6 MAY 1759",
+      "year": 1759,
+      "month": 5,
+      "day": 6
+    }
+  },
+  "gedcom_xref": "@I6000000092447082842@",
+  "married_name": "Dybdal",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

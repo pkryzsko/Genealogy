@@ -1,0 +1,39 @@
+{
+  "id": "gedcom-I6000000044794478190",
+  "name": "Ingeborg Marie Christensdatter Hasvold",
+  "first_name": "Ingeborg Marie Christensdatter",
+  "last_name": "Hasvold",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "26 MAY 1815",
+      "year": 1815,
+      "month": 5,
+      "day": 26
+    },
+    "location": {
+      "place_name": "Hasvold"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "18 JUN 1815",
+      "year": 1815,
+      "month": 6,
+      "day": 18
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "5 AUG 1850",
+      "year": 1850,
+      "month": 8,
+      "day": 5
+    }
+  },
+  "gedcom_xref": "@I6000000044794478190@",
+  "married_name": "Hasvold",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

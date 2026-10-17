@@ -1,0 +1,32 @@
+{
+  "id": "gedcom-I6000000049703449888",
+  "name": "Erik Tordsen",
+  "first_name": "Erik",
+  "last_name": "Tordsen",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "1743",
+      "year": 1743
+    },
+    "location": {
+      "place_name": "Setton"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "8 OCT 1813",
+      "year": 1813,
+      "month": 10,
+      "day": 8
+    },
+    "location": {
+      "place_name": "Homb"
+    }
+  },
+  "gedcom_xref": "@I6000000049703449888@",
+  "married_name": "Tordsen",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

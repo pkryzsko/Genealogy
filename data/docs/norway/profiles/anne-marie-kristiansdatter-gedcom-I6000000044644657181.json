@@ -1,0 +1,46 @@
+{
+  "id": "gedcom-I6000000044644657181",
+  "name": "Anne Marie Kristiansdatter",
+  "first_name": "Anne Marie",
+  "last_name": "Kristiansdatter",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "27 DEC 1814",
+      "year": 1814,
+      "month": 12,
+      "day": 27
+    },
+    "location": {
+      "place_name": "Granum"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "1 JAN 1814",
+      "year": 1814,
+      "month": 1,
+      "day": 1
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "29 JAN 1892",
+      "year": 1892,
+      "month": 1,
+      "day": 29
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "20 FEB 1892",
+      "year": 1892,
+      "month": 2,
+      "day": 20
+    }
+  },
+  "gedcom_xref": "@I6000000044644657181@",
+  "relation": "ancestor",
+  "generation": 3,
+  "living": false
+}

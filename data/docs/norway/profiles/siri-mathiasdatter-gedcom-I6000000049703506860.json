@@ -1,0 +1,38 @@
+{
+  "id": "gedcom-I6000000049703506860",
+  "name": "Siri Mathiasdatter",
+  "first_name": "Siri Mathiasdatter",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "ABT 1748",
+      "year": 1748
+    },
+    "location": {
+      "place_name": "Tomleeie Nordsinni Nordre Land"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "5 FEB 1828",
+      "year": 1828,
+      "month": 2,
+      "day": 5
+    },
+    "location": {
+      "place_name": "Skinnerud Østsinni Nordre Land"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "16 FEB 1828",
+      "year": 1828,
+      "month": 2,
+      "day": 16
+    }
+  },
+  "gedcom_xref": "@I6000000049703506860@",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

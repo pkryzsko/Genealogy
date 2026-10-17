@@ -1,0 +1,38 @@
+{
+  "id": "gedcom-I6000000049703475828",
+  "name": "Kristine Andersdatter Berg",
+  "first_name": "Kristine Andersdatter",
+  "last_name": "Berg",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1763",
+      "year": 1763
+    },
+    "location": {
+      "place_name": "Lunde"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "15 MAY 1763",
+      "year": 1763,
+      "month": 5,
+      "day": 15
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1830",
+      "year": 1830
+    },
+    "location": {
+      "place_name": "Bergseie, Østsinni, Nordre-Land, Oppland"
+    }
+  },
+  "gedcom_xref": "@I6000000049703475828@",
+  "married_name": "Berg",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

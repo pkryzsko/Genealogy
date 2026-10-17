@@ -1,0 +1,33 @@
+{
+  "id": "gedcom-I6000000028070918880",
+  "name": "Hazel Palma Sorlien",
+  "first_name": "Hazel Palma",
+  "last_name": "Sorlien",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "21 JUL 1912",
+      "year": 1912,
+      "month": 7,
+      "day": 21
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "6 JUN 1972",
+      "year": 1972,
+      "month": 6,
+      "day": 6
+    }
+  },
+  "burial": {
+    "location": {
+      "place_name": "Bethania Cemetary"
+    }
+  },
+  "gedcom_xref": "@I6000000028070918880@",
+  "married_name": "Bjerke",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}

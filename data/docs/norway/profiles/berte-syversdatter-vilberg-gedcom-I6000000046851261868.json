@@ -1,0 +1,29 @@
+{
+  "id": "gedcom-I6000000046851261868",
+  "name": "Berte Syversdatter Vilberg",
+  "first_name": "Berte Syversdatter",
+  "last_name": "Vilberg",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1771",
+      "year": 1771
+    },
+    "location": {
+      "place_name": "Nordre Sedahl, Søndre Land"
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "10 FEB 1851",
+      "year": 1851,
+      "month": 2,
+      "day": 10
+    }
+  },
+  "gedcom_xref": "@I6000000046851261868@",
+  "married_name": "Vilberg",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gedcom-I6000000006899075568",
+  "name": "Halvor Halvorson Svenseid",
+  "first_name": "Halvor Halvorson",
+  "last_name": "Svenseid",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "5 JUL 1789",
+      "year": 1789,
+      "month": 7,
+      "day": 5
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "1865",
+      "year": 1865
+    }
+  },
+  "gedcom_xref": "@I6000000006899075568@",
+  "married_name": "Svenseid",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

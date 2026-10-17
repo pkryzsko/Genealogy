@@ -1,0 +1,18 @@
+{
+  "id": "gedcom-I6000000105981626032",
+  "name": "Kjersti Nilsdatter Valhovd",
+  "first_name": "Kjersti Nilsdatter",
+  "last_name": "Valhovd",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "ABT 1750",
+      "year": 1750
+    }
+  },
+  "gedcom_xref": "@I6000000105981626032@",
+  "married_name": "Valhovd",
+  "relation": "ancestor",
+  "generation": 5,
+  "living": false
+}

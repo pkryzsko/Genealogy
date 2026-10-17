@@ -1,0 +1,48 @@
+{
+  "id": "gedcom-I6000000020570633291",
+  "name": "Ingeborg Christensdatter Hasvold",
+  "first_name": "Ingeborg Christensdatter",
+  "last_name": "Hasvold",
+  "gender": "female",
+  "birth": {
+    "date": {
+      "raw": "1791",
+      "year": 1791
+    },
+    "location": {
+      "place_name": "Hasvoldeie"
+    }
+  },
+  "baptism": {
+    "date": {
+      "raw": "15 MAY 1791",
+      "year": 1791,
+      "month": 5,
+      "day": 15
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "18 JUL 1855",
+      "year": 1855,
+      "month": 7,
+      "day": 18
+    },
+    "location": {
+      "place_name": "Nerbyeie"
+    }
+  },
+  "burial": {
+    "date": {
+      "raw": "24 JUL 1855",
+      "year": 1855,
+      "month": 7,
+      "day": 24
+    }
+  },
+  "gedcom_xref": "@I6000000020570633291@",
+  "married_name": "Hasvold",
+  "relation": "ancestor",
+  "generation": 4,
+  "living": false
+}

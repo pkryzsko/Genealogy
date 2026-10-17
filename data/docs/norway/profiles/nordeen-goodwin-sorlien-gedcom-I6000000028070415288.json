@@ -1,0 +1,28 @@
+{
+  "id": "gedcom-I6000000028070415288",
+  "name": "Nordeen Goodwin Sorlien",
+  "first_name": "Nordeen Goodwin",
+  "last_name": "Sorlien",
+  "gender": "male",
+  "birth": {
+    "date": {
+      "raw": "22 FEB 1927",
+      "year": 1927,
+      "month": 2,
+      "day": 22
+    }
+  },
+  "death": {
+    "date": {
+      "raw": "30 AUG 2011",
+      "year": 2011,
+      "month": 8,
+      "day": 30
+    }
+  },
+  "gedcom_xref": "@I6000000028070415288@",
+  "married_name": "Sorlien",
+  "relation": "sibling",
+  "generation": 0,
+  "living": false
+}
