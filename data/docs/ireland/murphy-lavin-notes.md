@@ -36,12 +36,27 @@ came from FamilySearch via Patrick. A copy is kept privately in Genealogy-Living
 Margin: "Murphy James and Sherlock Mary [?]", marked "Registered".
 
 Notes:
-- James's mother is given as **Mary Thorp** (the surname is hard to read: Thorp, Tharp or Thorpe?).
-  She is not in the GEDCOM.
+- James's mother is given as **Mary Thorp**. She is Mary Thorpe in the GEDCOM; see below.
 - The bride is called **Anne**, matching Elizabeth Anne Sherlock. The margin seems to say "Mary".
 - The witness **Bridget Sherlock** is probably the bride's sister, Bridget Ellen Sherlock (born 1858).
 - Ages: James 23 and Anne 20. That fits Anne's birth in 1856, but for James (born 15 Apr 1854,
   so 22 in May 1876) it is about a year off.
+
+## Arthur Murphy and Mary Thorpe (James's parents)
+
+- **Arthur Murphy Sr.** (12 Mar 1822 – Mar 1891), farmer, was born at **Enniscorthy, County Wexford**.
+  His parents were Patt Murphy and Catharine Pettit. He was buried in Grand Forks, ND. His Geni
+  sources include County Wexford census material.
+  Find a Grave: https://www.findagrave.com/memorial/21723405/arthur-murphy
+- **Mary Thorpe** (Nov 1817 – 23 Feb 1909, East Grand Forks, MN; buried in Grand Forks). The GEDCOM
+  gives her baptism as **16 Nov 1817 at St. Catherine's, Meath Street, Dublin**, with a baptism
+  image on Geni. Find a Grave: https://www.findagrave.com/memorial/21723420
+- Patrick's family knowledge is that both came from **County Wexford**. Mary's Dublin baptism doesn't
+  necessarily contradict that: she may have been baptized in Dublin and raised in Wexford, or two
+  Mary Thorpes may have been mixed up. **Open question.**
+- Their children (GEDCOM): James Patrick (1854), Margaret (1857), Garrett G. (1859), Mary Anne (1861),
+  Philip (1863) and Arthur (1864–1885). In 1876 the family was in the Pakenham mission, Ontario.
+  Arthur and Mary later farmed in Ferry Township (Grand Forks County, ND) until 1891.
 
 ## Rev. Fr. Dominic Lavin
 
