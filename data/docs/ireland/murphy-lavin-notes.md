@@ -58,6 +58,15 @@ Notes:
   Philip (1863) and Arthur (1864–1885). In 1876 the family was in the Pakenham mission, Ontario.
   Arthur and Mary later farmed in Ferry Township (Grand Forks County, ND) until 1891.
 
+## Ferry family connection
+
+- **Margaret Murphy** (11 Jun 1881 – 1968), daughter of James Patrick Murphy and Elizabeth Anne
+  Sherlock (so Patrick's great-great-aunt), married **Joseph Stewart Ferry** (1878–1954), son of
+  Peter Ferry and Julia A. Hickey (GEDCOM). Their children were first cousins of Margaret Evelyn Murphy.
+- **Ferry Township** (Grand Forks County, ND), where Arthur and Mary Murphy farmed, surrounds the city of
+  **Manvel** (founded 1881) (Wikipedia, "Ferry Township, North Dakota"). Whether the township was
+  named after this Ferry family is unconfirmed.
+
 ## Rev. Fr. Dominic Lavin
 
 - Not a blood relative. Patrick found him through the marriage register and created his Geni
