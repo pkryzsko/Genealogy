@@ -29,3 +29,7 @@ Peter's father, **Petter Pedersen** (b. 13 May 1849 at Lomsdalen, d. 23 May 1925
 husmann (crofter) at Leresdalen under Gjefle, Nordre Land, according to the 1875, 1900 and 1910
 censuses. Patrick's Facebook page for him shows the home site:
 https://www.facebook.com/LeresdalenSondreLand1849NordeLand1925
+
+Family tradition holds that Leresdal/Leresdalen was named after an original owner called Lars
+(unverified). *Dal* = valley, *-en* = "the". Census spellings vary: Linedsdalen (1875),
+Leresdalen (1900), Lenæsdalen (1910).
