@@ -5,8 +5,10 @@ Scope: anchor profile, all of the anchor's ancestors, and the anchor's siblings.
 No spouses (unless they are ancestors) and no descendants of siblings.
 
 Usage:
-  geni_import.py auth --code CODE        # exchange one-time OAuth code, store token
-  (or set GENI_ACCESS_TOKEN from the client-side flow: authorize?client_id=...&response_type=token)
+  geni_import.py auth-url                # start read-only OAuth; requires GENI_REDIRECT_URI
+  geni_import.py auth                    # securely prompt for returned code and state
+  geni_import.py check                   # authenticated read-only check, no profile output
+  (or securely set GENI_ACCESS_TOKEN to use an existing token)
   geni_import.py path                    # show me -> mother -> grandmother for checking
   geni_import.py run --line norway --public-dir DIR --private-dir DIR [--anchor profile-123]
 
@@ -18,18 +20,26 @@ GEDCOM instead of the API (e.g. a Geni or MyHeritage export):
 """
 import argparse
 import datetime as dt
+import getpass
 import json
 import os
 import re
+import secrets
 import sys
+import tempfile
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
+import warnings
 from pathlib import Path
 
 API = "https://www.geni.com/api"
+AUTHORIZE_URL = "https://www.geni.com/platform/oauth/authorize"
 TOKEN_URL = "https://www.geni.com/platform/oauth/request_token"
 TOKEN_FILE = Path.home() / ".geni" / "token.json"
+STATE_FILE = Path.home() / ".geni" / "oauth-state.json"
+STATE_TTL = 600
 LIVING_YEARS = 110
 FIELDS = ",".join([
     "id", "guid", "name", "display_name", "first_name", "middle_name", "last_name",
@@ -46,31 +56,102 @@ def client_creds():
     return cid, secret
 
 
+def private_json(path, value):
+    """Create files with mode 0600 before writing, then atomically replace."""
+    path.parent.mkdir(mode=0o700, exist_ok=True)
+    fd, name = tempfile.mkstemp(dir=path.parent)
+    try:
+        with os.fdopen(fd, "w") as f:
+            json.dump(value, f)
+        os.replace(name, path)
+    finally:
+        if os.path.exists(name):
+            os.unlink(name)
+
+
+def redirect_uri():
+    value = os.environ.get("GENI_REDIRECT_URI", "")
+    try:
+        url = urllib.parse.urlsplit(value)
+        valid = (url.scheme in ("http", "https") and url.hostname
+                 and not url.username and not url.password and not url.fragment
+                 and not url.query and not any(c.isspace() for c in value))
+        url.port  # validate port syntax too
+    except ValueError:
+        valid = False
+    if not valid:
+        sys.exit("Set GENI_REDIRECT_URI to an absolute HTTP(S) callback without query or fragment")
+    host = url.hostname.lower().rstrip(".")
+    if host == "localhost" or host.endswith(".localhost"):
+        sys.exit("Use a proper callback hostname matching the Geni app settings; localhost may be blocked")
+    return value  # preserve the exact spelling for both OAuth steps
+
+
+def authorization_url():
+    redirect = redirect_uri()
+    pending = {"state": secrets.token_urlsafe(32), "redirect_uri": redirect,
+               "client_id": os.environ.get("GENI_APP_ID", "2290"),
+               "created_at": time.time()}
+    private_json(STATE_FILE, pending)
+    return AUTHORIZE_URL + "?" + urllib.parse.urlencode({
+        "client_id": pending["client_id"], "redirect_uri": redirect,
+        "response_type": "code", "scope": "read_profile", "state": pending["state"]})
+
+
 def save_token(tok):
-    TOKEN_FILE.parent.mkdir(mode=0o700, exist_ok=True)
     tok["obtained_at"] = int(time.time())
-    TOKEN_FILE.write_text(json.dumps(tok))
-    TOKEN_FILE.chmod(0o600)
+    private_json(TOKEN_FILE, tok)
 
 
 def token_request(params):
     data = urllib.parse.urlencode(params).encode()
-    with urllib.request.urlopen(urllib.request.Request(TOKEN_URL, data=data)) as r:
-        tok = json.load(r)
-    if "access_token" not in tok:
-        sys.exit(f"Token request failed: {tok.get('error')}: {tok.get('error_description')}")
+    try:
+        with urllib.request.urlopen(urllib.request.Request(TOKEN_URL, data=data), timeout=30) as r:
+            tok = json.load(r)
+    except urllib.error.HTTPError as e:
+        sys.exit(f"Token request failed: HTTP {e.code}")
+    except (urllib.error.URLError, TimeoutError, ValueError):
+        sys.exit("Token request failed: transport or invalid JSON response")
+    if not isinstance(tok, dict) or not tok.get("access_token"):
+        sys.exit("Token request failed: no access token returned")
+    tok["redirect_uri"] = params["redirect_uri"]
     save_token(tok)
     return tok
 
 
-def exchange_code(code):
+def exchange_code(code, state):
+    redirect = redirect_uri()
+    try:
+        pending = json.loads(STATE_FILE.read_text())
+        age = time.time() - pending["created_at"]
+        valid = (0 <= age < STATE_TTL and isinstance(state, str) and bool(state)
+                 and secrets.compare_digest(state.encode(), pending["state"].encode())
+                 and redirect == pending["redirect_uri"]
+                 and os.environ.get("GENI_APP_ID", "2290") == pending["client_id"])
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        valid = False
+    if not valid or not code:
+        sys.exit("OAuth state missing, invalid, expired, or configuration changed; run auth-url again")
     cid, secret = client_creds()
-    params = {"client_id": cid, "client_secret": secret, "code": code}
-    redirect = os.environ.get("GENI_REDIRECT_URI")
-    if redirect:
-        params["redirect_uri"] = redirect
+    # Consume this single-use state before sending a code, including on exchange failure.
+    try:
+        STATE_FILE.unlink()
+    except FileNotFoundError:
+        sys.exit("OAuth state already consumed; run auth-url again")
+    params = {"client_id": cid, "client_secret": secret, "code": code,
+              "grant_type": "authorization_code", "redirect_uri": pending["redirect_uri"]}
     token_request(params)
     print("Token stored at", TOKEN_FILE)
+
+
+def hidden_input(prompt):
+    # getpass otherwise falls back to echoing input when terminal control fails.
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", getpass.GetPassWarning)
+            return getpass.getpass(prompt)
+    except (getpass.GetPassWarning, EOFError):
+        sys.exit("Hidden input unavailable; securely set GENI_AUTH_CODE and GENI_AUTH_STATE")
 
 
 def access_token():
@@ -80,15 +161,19 @@ def access_token():
         cid, secret = client_creds()
         token_request({"client_id": cid, "client_secret": secret,
                        "grant_type": "refresh_token",
-                       "refresh_token": os.environ["GENI_REFRESH_TOKEN"]})
+                       "refresh_token": os.environ["GENI_REFRESH_TOKEN"],
+                       "redirect_uri": redirect_uri()})
     if not TOKEN_FILE.exists():
-        sys.exit("No token. Run: geni_import.py auth --code CODE")
+        sys.exit("No token. Run auth-url, authorize in your browser, then run auth")
     tok = json.loads(TOKEN_FILE.read_text())
     if time.time() > tok["obtained_at"] + int(tok.get("expires_in", 0)) - 120:
+        redirect = redirect_uri()
+        if tok.get("redirect_uri", redirect) != redirect:
+            sys.exit("GENI_REDIRECT_URI differs from the stored token callback")
         cid, secret = client_creds()
         tok = token_request({"client_id": cid, "client_secret": secret,
                              "grant_type": "refresh_token",
-                             "refresh_token": tok["refresh_token"]})
+                             "refresh_token": tok["refresh_token"], "redirect_uri": redirect})
     return tok["access_token"]
 
 
@@ -104,7 +189,7 @@ class Geni:
         for attempt in range(5):
             req = urllib.request.Request(url, headers={"Authorization": f"Bearer {self.token}"})
             try:
-                with urllib.request.urlopen(req) as r:
+                with urllib.request.urlopen(req, timeout=30) as r:
                     body = json.load(r)
                     remaining = int(r.headers.get("X-API-Rate-Remaining", "1"))
                     window = int(r.headers.get("X-API-Rate-Window", "10"))
@@ -115,7 +200,9 @@ class Geni:
                 if e.code in (429, 503):
                     time.sleep(10 * (attempt + 1))
                     continue
-                raise SystemExit(f"GET {path} failed: HTTP {e.code} {e.read()[:200]!r}")
+                raise SystemExit(f"Geni GET failed: HTTP {e.code}")
+            except (urllib.error.URLError, TimeoutError, ValueError):
+                raise SystemExit("Geni GET failed: transport or invalid JSON response")
         raise SystemExit(f"GET {path} kept failing (rate limit)")
 
     source = "geni.com API"
@@ -437,7 +524,13 @@ def run(args):
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
-    a = sub.add_parser("auth"); a.add_argument("--code", default=os.environ.get("GENI_AUTH_CODE"))
+    sub.add_parser("auth-url")
+    a = sub.add_parser("auth")
+    a.add_argument("--code", default=os.environ.get("GENI_AUTH_CODE"),
+                   help="prefer the hidden prompt or GENI_AUTH_CODE to avoid shell history")
+    a.add_argument("--state", default=os.environ.get("GENI_AUTH_STATE"),
+                   help="returned callback state; prefer the hidden prompt")
+    sub.add_parser("check")
     pa = sub.add_parser("path")
     sub.add_parser("whoami")
     f = sub.add_parser("find")
@@ -452,10 +545,19 @@ def main():
     r.add_argument("--private-dir", required=True)
     r.add_argument("--anchor")
     args = ap.parse_args()
-    if args.cmd == "auth":
-        if not args.code:
-            sys.exit("Pass --code or set GENI_AUTH_CODE")
-        exchange_code(args.code)
+    if args.cmd == "auth-url":
+        print(authorization_url())
+    elif args.cmd == "auth":
+        if (not args.code or not args.state) and not sys.stdin.isatty():
+            sys.exit("Use an interactive terminal or securely set GENI_AUTH_CODE and GENI_AUTH_STATE")
+        code = args.code or hidden_input("Code from Geni callback (hidden): ")
+        state = args.state or hidden_input("State from Geni callback (hidden): ")
+        exchange_code(code, state)
+    elif args.cmd == "check":
+        me = Geni().get("profile", fields="id")
+        if not isinstance(me, dict) or not me.get("id"):
+            sys.exit("Read-only check failed: no profile id returned")
+        print("Authenticated read-only Geni request succeeded (profile id received; value withheld)")
     elif args.cmd == "whoami":
         me = Geni().get("profile", fields="id,display_name,name")
         print("Signed in as:", me.get("display_name") or me.get("name"), me.get("id"))
@@ -472,3 +574,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
